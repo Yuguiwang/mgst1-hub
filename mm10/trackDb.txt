@@ -1,6 +1,6 @@
 track mgst1_isoforms
 type bigBed 12
-bigDataUrl mm10/mgst1_isoforms.bb
+bigDataUrl mgst1_isoforms.bb
 shortLabel Mgst1 isoforms
 longLabel Mgst1 isoform models v1/v3/v6/v7 (from user SnapGene files, mapped to mm10 RefSeq)
 visibility pack
