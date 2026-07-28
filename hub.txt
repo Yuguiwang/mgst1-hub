@@ -1,0 +1,6 @@
+hub Mgst1_tissue_expression
+shortLabel Mgst1 tissue RNA-seq
+longLabel Mgst1 isoforms and per-tissue RNA-seq coverage (mouse, mm10, ENCODE wild-type C57BL/6)
+genomesFile genomes.txt
+email your_email@example.com
+descriptionUrl mgst1_hub.html
