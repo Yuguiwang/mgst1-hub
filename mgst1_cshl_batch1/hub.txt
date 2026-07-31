@@ -1,0 +1,7 @@
+hub mgst1_cshl_batch1
+shortLabel Mgst1 CSHL batch1
+longLabel Mgst1 RNA-seq coverage - ENCODE polyA+ mouse tissues, Gingeras/CSHL batch 1 (76 bp, 2012), unmodified ENCODE files
+genomesFile genomes.txt
+email 
+descriptionUrl description.html
+useOneFile off

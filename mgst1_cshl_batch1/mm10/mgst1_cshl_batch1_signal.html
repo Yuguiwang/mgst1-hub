@@ -1,0 +1,52 @@
+<h2>Mgst1 — ENCODE CSHL batch 1 (unmodified ENCODE files)</h2>
+
+<p style="border:2px solid #060; padding:8px; background:#f4fff4">
+<b>No reprocessing.</b> Every track streams the original ENCODE bigWig directly from the ENCODE
+public S3 bucket. No file in this hub was generated, rescaled, merged, or averaged.
+Replicates are shown separately, exactly as ENCODE released them.</p>
+
+<p><b>Important — these ENCODE signal files are already RPM-normalised by ENCODE's own pipeline.</b>
+The bulk RNA-seq pipeline runs STAR with <code>--outWigNorm RPM</code>, so values are reads per
+million uniquely-mapped reads, not raw read counts (values are non-integer, and the genome-wide
+signal sum is near-constant across libraries despite differing sequencing depth). ENCODE does not
+distribute un-normalised bigWigs; producing those would require re-processing the BAMs, which is
+exactly what this hub avoids. Track heights are therefore already depth-comparable.</p>
+
+<h3>Contents</h3>
+<p>17 tissues &times; 2 biological replicates = 34 tracks. Single batch:
+<b>76 bp reads, submitted 2012-02-29 / 2012-06-29</b>, mm10 + GENCODE M21,
+pipeline <code>bulk-rna-seq-star-signal-generation-step-v-1-0</code>, lab Thomas Gingeras (CSHL),
+C57BL/6, adult 2 months. Because all libraries share one read length, one submission window and one
+pipeline version, <b>exon-ratio comparisons across these 17 tissues are valid</b> — unlike the
+101 bp batch (cerebellum, cortical plate, frontal cortex, placenta, urinary bladder), which is
+deliberately excluded here.</p>
+
+<p><b>Signal type:</b> <i>plus strand signal of unique reads</i>. Mgst1 is a plus-strand gene, so
+minus-strand files carry no Mgst1 signal (verified: minus-strand mean over the locus &asymp; 0).</p>
+
+<h3>Files</h3>
+<table border="1" cellpadding="3" style="border-collapse:collapse; font-size:90%">
+<tr><th>Tissue</th><th>Organ system</th><th>Experiment</th><th>bigWig (rep1, rep2)</th><th>Submitted</th></tr>
+<tr><td>adrenal gland</td><td>endocrine</td><td>ENCSR000BYX</td><td>ENCFF341NKU, ENCFF850RDI</td><td>2012-06-29</td></tr>
+<tr><td>colon</td><td>digestive</td><td>ENCSR000BYP</td><td>ENCFF085QPW, ENCFF703ERP</td><td>2012-02-29</td></tr>
+<tr><td>duodenum</td><td>digestive</td><td>ENCSR000BYY</td><td>ENCFF721GSY, ENCFF870YZN</td><td>2012-02-29</td></tr>
+<tr><td>gonadal fat pad</td><td>adipose</td><td>ENCSR000BYZ</td><td>ENCFF871LPW, ENCFF734JPE</td><td>2012-06-29</td></tr>
+<tr><td>heart</td><td>cardiovascular</td><td>ENCSR000BYQ</td><td>ENCFF558JWN, ENCFF671TNT</td><td>2012-02-29</td></tr>
+<tr><td>kidney</td><td>renal</td><td>ENCSR000BYR</td><td>ENCFF878WGQ, ENCFF127NND</td><td>2012-02-29</td></tr>
+<tr><td>large intestine</td><td>digestive</td><td>ENCSR000BZA</td><td>ENCFF708IGB, ENCFF923EEV</td><td>2012-02-29</td></tr>
+<tr><td>liver</td><td>digestive</td><td>ENCSR000BYS</td><td>ENCFF995EIJ, ENCFF322KOW</td><td>2012-06-29</td></tr>
+<tr><td>lung</td><td>respiratory</td><td>ENCSR000BYT</td><td>ENCFF070OKD, ENCFF594SPI</td><td>2012-02-29</td></tr>
+<tr><td>mammary gland</td><td>reproductive</td><td>ENCSR000BZB</td><td>ENCFF791XDM, ENCFF171DFQ</td><td>2012-02-29</td></tr>
+<tr><td>ovary</td><td>reproductive</td><td>ENCSR000BZC</td><td>ENCFF946YVP, ENCFF679TGN</td><td>2012-02-29</td></tr>
+<tr><td>small intestine</td><td>digestive</td><td>ENCSR000BZD</td><td>ENCFF119WXY, ENCFF476LIT</td><td>2012-02-29</td></tr>
+<tr><td>spleen</td><td>immune</td><td>ENCSR000BYU</td><td>ENCFF828PDL, ENCFF401NFX</td><td>2012-02-29</td></tr>
+<tr><td>stomach</td><td>digestive</td><td>ENCSR000BZE</td><td>ENCFF764FGD, ENCFF148NLE</td><td>2012-02-29</td></tr>
+<tr><td>subcutaneous adipose tissue</td><td>adipose</td><td>ENCSR000BZF</td><td>ENCFF811XDE, ENCFF842RAN</td><td>2012-06-29</td></tr>
+<tr><td>testis</td><td>reproductive</td><td>ENCSR000BYW</td><td>ENCFF216HBX, ENCFF804EKC</td><td>2012-02-29</td></tr>
+<tr><td>thymus</td><td>immune</td><td>ENCSR000BYV</td><td>ENCFF978UIY, ENCFF900YZM</td><td>2012-02-29</td></tr>
+</table>
+
+<p>Mgst1 mm10 locus: chr6:138,140,526-138,156,755 (plus strand). Exon bins used in the accompanying
+tables: E1a 138,140,526-138,140,652; E1b 138,141,586-138,141,882; E2 138,147,658-138,147,815;
+E3 138,150,767-138,150,862; E3b 138,153,495-138,153,603 (cassette); E4 138,156,131-138,156,755
+(terminal exon + 3'UTR).</p>
