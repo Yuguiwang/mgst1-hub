@@ -1,5 +1,5 @@
-hub mgst1_cshl_batch1
-shortLabel Mouse tissue RNA
+hub mouse_tissue_rnaseq_stranded
+shortLabel ENCODE 17 tissues
 longLabel Mouse tissue RNA-seq (stranded) - ENCODE polyA+, Gingeras lab CSHL, single batch 76 bp 2012, unmodified ENCODE files
 useOneFile on
 descriptionUrl https://www.encodeproject.org/search/?type=Experiment&accession=ENCSR000BYP&accession=ENCSR000BYQ&accession=ENCSR000BYR&accession=ENCSR000BYS&accession=ENCSR000BYT&accession=ENCSR000BYU&accession=ENCSR000BYV&accession=ENCSR000BYW&accession=ENCSR000BYX&accession=ENCSR000BYY&accession=ENCSR000BYZ&accession=ENCSR000BZA&accession=ENCSR000BZB&accession=ENCSR000BZC&accession=ENCSR000BZD&accession=ENCSR000BZE&accession=ENCSR000BZF
@@ -8,10 +8,10 @@ email
 genome mm10
 defaultPos chr6:138,139,500-138,157,800
 
-track mgst1_cshl_batch1_signal
+track mtrs_signal
 compositeTrack on
 type bigWig
-shortLabel Tissue RNA-seq
+shortLabel ENCODE CSHL tissues
 longLabel Stranded RNA-seq | SOURCE: ENCODE, Gingeras lab (CSHL) | 17 tissues x 2 reps x 2 strands | mm10/GENCODE M21 | 76 bp | 2012 | C57BL/6 adult 2mo | ENCODE RPM, unmodified | USE + FOR PLUS-STRAND GENES, - FOR MINUS-STRAND GENES
 visibility full
 autoScale group
@@ -30,8 +30,8 @@ sortOrder strand=+ system=+ tissue=+ rep=+
 dragAndDrop subTracks
 priority 1
 
-    track mgst1_cshl_batch1_gonadal_fat_pad_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_gonadal_fat_pad_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=adipose tissue=gonadal_fat_pad rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/09649709-632a-4e02-b18e-b87308ca0c56/ENCFF739HIM.bigWig
     shortLabel gon fat r1-
@@ -40,8 +40,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_gonadal_fat_pad_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_gonadal_fat_pad_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=adipose tissue=gonadal_fat_pad rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/b73cb03d-fe49-4f32-b0d4-00b8ab2098e3/ENCFF871LPW.bigWig
     shortLabel gon fat r1+
@@ -50,8 +50,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_gonadal_fat_pad_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_gonadal_fat_pad_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=adipose tissue=gonadal_fat_pad rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/6ec7a3b5-c272-43ef-9882-4302745093f0/ENCFF010WLJ.bigWig
     shortLabel gon fat r2-
@@ -60,8 +60,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_gonadal_fat_pad_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_gonadal_fat_pad_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=adipose tissue=gonadal_fat_pad rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/fca2662a-6c9c-4068-8969-2e35947f92b3/ENCFF734JPE.bigWig
     shortLabel gon fat r2+
@@ -70,8 +70,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_subcutaneous_adipose_tissue_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_subcutaneous_adipose_tissue_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=adipose tissue=subcutaneous_adipose_tissue rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/4fefef5c-cfcd-4336-aa73-651f6696ab02/ENCFF018UWV.bigWig
     shortLabel sc adipose r1-
@@ -80,8 +80,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_subcutaneous_adipose_tissue_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_subcutaneous_adipose_tissue_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=adipose tissue=subcutaneous_adipose_tissue rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/c526dab6-918d-4871-92b0-937f5206b80b/ENCFF811XDE.bigWig
     shortLabel sc adipose r1+
@@ -90,8 +90,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_subcutaneous_adipose_tissue_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_subcutaneous_adipose_tissue_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=adipose tissue=subcutaneous_adipose_tissue rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/e8d4f058-01cd-455b-bab2-7c8d6f407857/ENCFF421HRY.bigWig
     shortLabel sc adipose r2-
@@ -100,8 +100,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_subcutaneous_adipose_tissue_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_subcutaneous_adipose_tissue_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=adipose tissue=subcutaneous_adipose_tissue rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/785279d3-9aee-4d5c-84d2-2101d29554ac/ENCFF842RAN.bigWig
     shortLabel sc adipose r2+
@@ -110,8 +110,8 @@ priority 1
     color 230,171,2
     type bigWig
 
-    track mgst1_cshl_batch1_heart_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_heart_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=cardiovascular tissue=heart rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/c84326d8-5be9-47c6-a74c-4d5f146f097f/ENCFF809YQZ.bigWig
     shortLabel heart r1-
@@ -120,8 +120,8 @@ priority 1
     color 231,41,138
     type bigWig
 
-    track mgst1_cshl_batch1_heart_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_heart_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=cardiovascular tissue=heart rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/9304dd82-b322-42f4-83b2-9e46b59a9e83/ENCFF558JWN.bigWig
     shortLabel heart r1+
@@ -130,8 +130,8 @@ priority 1
     color 231,41,138
     type bigWig
 
-    track mgst1_cshl_batch1_heart_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_heart_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=cardiovascular tissue=heart rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/e687fc71-77c4-44c7-98c4-c55855e65133/ENCFF105PMT.bigWig
     shortLabel heart r2-
@@ -140,8 +140,8 @@ priority 1
     color 231,41,138
     type bigWig
 
-    track mgst1_cshl_batch1_heart_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_heart_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=cardiovascular tissue=heart rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/010879a5-7dcd-4d32-bbca-cb4bacc8b16b/ENCFF671TNT.bigWig
     shortLabel heart r2+
@@ -150,8 +150,8 @@ priority 1
     color 231,41,138
     type bigWig
 
-    track mgst1_cshl_batch1_colon_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_colon_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=colon rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/0b5405c3-4820-4141-82cf-0ed1d57bdc4c/ENCFF995ADI.bigWig
     shortLabel colon r1-
@@ -160,8 +160,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_colon_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_colon_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=colon rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/05fcc0a0-bbdc-4bb1-8ead-0645f1318a2f/ENCFF085QPW.bigWig
     shortLabel colon r1+
@@ -170,8 +170,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_colon_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_colon_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=colon rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/ec66f7ca-b139-41f6-915f-46dadae39cbb/ENCFF080IFX.bigWig
     shortLabel colon r2-
@@ -180,8 +180,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_colon_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_colon_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=colon rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/1881f963-bdad-4420-af1f-e5640d923624/ENCFF703ERP.bigWig
     shortLabel colon r2+
@@ -190,8 +190,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_duodenum_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_duodenum_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=duodenum rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/495160cb-fb2e-4115-a158-da7b94646597/ENCFF774EZT.bigWig
     shortLabel duodenum r1-
@@ -200,8 +200,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_duodenum_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_duodenum_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=duodenum rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/d5d3a307-34f5-4820-8106-8cd53f773173/ENCFF721GSY.bigWig
     shortLabel duodenum r1+
@@ -210,8 +210,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_duodenum_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_duodenum_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=duodenum rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/4c8cffe7-9631-4e0d-a52d-939d5dbab47b/ENCFF630LOC.bigWig
     shortLabel duodenum r2-
@@ -220,8 +220,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_duodenum_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_duodenum_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=duodenum rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/5d0dcd5f-fae2-43b6-8097-2f5b4f157a1b/ENCFF870YZN.bigWig
     shortLabel duodenum r2+
@@ -230,8 +230,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_large_intestine_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_large_intestine_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=large_intestine rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/a4493515-c088-4543-a46c-4b72a88d0a8b/ENCFF585WRK.bigWig
     shortLabel lg intest r1-
@@ -240,8 +240,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_large_intestine_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_large_intestine_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=large_intestine rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/847d0fdf-c23e-4594-8a14-31a798ce79a8/ENCFF708IGB.bigWig
     shortLabel lg intest r1+
@@ -250,8 +250,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_large_intestine_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_large_intestine_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=large_intestine rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/f8e9e968-15ed-49c6-934c-a7ff231e371a/ENCFF858AGA.bigWig
     shortLabel lg intest r2-
@@ -260,8 +260,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_large_intestine_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_large_intestine_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=large_intestine rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/4c3bfd84-a491-4841-9932-fe85a83e3fa9/ENCFF923EEV.bigWig
     shortLabel lg intest r2+
@@ -270,8 +270,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_liver_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_liver_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=liver rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/d5506142-fb7a-43eb-8597-190baf3515f4/ENCFF758DJR.bigWig
     shortLabel liver r1-
@@ -280,8 +280,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_liver_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_liver_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=liver rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/a6eeb3c5-8ee3-4413-99a3-d13e3510c478/ENCFF995EIJ.bigWig
     shortLabel liver r1+
@@ -290,8 +290,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_liver_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_liver_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=liver rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/952c7ccb-be55-4c2c-aff2-f259f0768a9b/ENCFF261RMC.bigWig
     shortLabel liver r2-
@@ -300,8 +300,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_liver_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_liver_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=liver rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/bd017db8-6dd5-429a-bad8-3ef23fe360be/ENCFF322KOW.bigWig
     shortLabel liver r2+
@@ -310,8 +310,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_small_intestine_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_small_intestine_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=small_intestine rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/b20e90ff-5da4-4023-ace7-7dc0beeab840/ENCFF646HYR.bigWig
     shortLabel sm intest r1-
@@ -320,8 +320,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_small_intestine_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_small_intestine_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=small_intestine rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/073b15fc-1ca5-406c-8865-2405a4658613/ENCFF119WXY.bigWig
     shortLabel sm intest r1+
@@ -330,8 +330,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_small_intestine_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_small_intestine_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=small_intestine rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/2fb9055c-ebba-4b6a-a6f7-77b5e6721dbc/ENCFF072MPS.bigWig
     shortLabel sm intest r2-
@@ -340,8 +340,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_small_intestine_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_small_intestine_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=small_intestine rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/2ba2951d-367a-4b4c-958e-154b57e1fe44/ENCFF476LIT.bigWig
     shortLabel sm intest r2+
@@ -350,8 +350,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_stomach_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_stomach_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=stomach rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/89d72d03-64eb-44d7-a753-3f410ee7d85b/ENCFF419SKL.bigWig
     shortLabel stomach r1-
@@ -360,8 +360,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_stomach_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_stomach_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=stomach rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/8b7e5008-9e17-420f-a8b6-45202d99a009/ENCFF764FGD.bigWig
     shortLabel stomach r1+
@@ -370,8 +370,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_stomach_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_stomach_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=digestive tissue=stomach rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/1c6990d4-227f-4a67-87ba-e78b9fa897dd/ENCFF553SWE.bigWig
     shortLabel stomach r2-
@@ -380,8 +380,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_stomach_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_stomach_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=digestive tissue=stomach rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/128b57da-3877-4fa1-9092-ba067d30d826/ENCFF148NLE.bigWig
     shortLabel stomach r2+
@@ -390,8 +390,8 @@ priority 1
     color 27,158,119
     type bigWig
 
-    track mgst1_cshl_batch1_adrenal_gland_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_adrenal_gland_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=endocrine tissue=adrenal_gland rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/6eb8a9f2-855a-4dde-b9ad-36f3dc38c755/ENCFF739WPT.bigWig
     shortLabel adrenal r1-
@@ -400,8 +400,8 @@ priority 1
     color 166,118,29
     type bigWig
 
-    track mgst1_cshl_batch1_adrenal_gland_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_adrenal_gland_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=endocrine tissue=adrenal_gland rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/9ebbd96d-28d1-4b2d-aaf4-c7fabb461686/ENCFF341NKU.bigWig
     shortLabel adrenal r1+
@@ -410,8 +410,8 @@ priority 1
     color 166,118,29
     type bigWig
 
-    track mgst1_cshl_batch1_adrenal_gland_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_adrenal_gland_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=endocrine tissue=adrenal_gland rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/e54ac73a-f268-4eb3-8a46-dd7aaa5ab92f/ENCFF640EZA.bigWig
     shortLabel adrenal r2-
@@ -420,8 +420,8 @@ priority 1
     color 166,118,29
     type bigWig
 
-    track mgst1_cshl_batch1_adrenal_gland_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_adrenal_gland_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=endocrine tissue=adrenal_gland rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/484e4dee-3abf-4f2f-9cfa-6a1bd5a7336d/ENCFF850RDI.bigWig
     shortLabel adrenal r2+
@@ -430,8 +430,8 @@ priority 1
     color 166,118,29
     type bigWig
 
-    track mgst1_cshl_batch1_spleen_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_spleen_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=immune tissue=spleen rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/1c478524-e4f3-4bae-b9ad-e864001f3412/ENCFF246QJX.bigWig
     shortLabel spleen r1-
@@ -440,8 +440,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_spleen_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_spleen_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=immune tissue=spleen rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/664c0337-ac8c-4b80-a96c-424e63a97f09/ENCFF828PDL.bigWig
     shortLabel spleen r1+
@@ -450,8 +450,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_spleen_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_spleen_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=immune tissue=spleen rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/91ab77ca-266c-4b40-ab5e-8c8c722c2a03/ENCFF717MPE.bigWig
     shortLabel spleen r2-
@@ -460,8 +460,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_spleen_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_spleen_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=immune tissue=spleen rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/17285c3c-b25a-4aad-b90d-956758055ef4/ENCFF401NFX.bigWig
     shortLabel spleen r2+
@@ -470,8 +470,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_thymus_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_thymus_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=immune tissue=thymus rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/cfa673df-9a14-486c-a8e0-5a02ea0ea3d0/ENCFF086DWX.bigWig
     shortLabel thymus r1-
@@ -480,8 +480,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_thymus_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_thymus_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=immune tissue=thymus rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/a1cd3b98-6c6e-4491-bfa8-a93a9e51e003/ENCFF978UIY.bigWig
     shortLabel thymus r1+
@@ -490,8 +490,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_thymus_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_thymus_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=immune tissue=thymus rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/6be0fc1d-aeda-4608-afe8-3ccf984b7391/ENCFF464ZRO.bigWig
     shortLabel thymus r2-
@@ -500,8 +500,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_thymus_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_thymus_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=immune tissue=thymus rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/60c59b40-0ee2-478c-a298-c31891e4800f/ENCFF900YZM.bigWig
     shortLabel thymus r2+
@@ -510,8 +510,8 @@ priority 1
     color 117,112,179
     type bigWig
 
-    track mgst1_cshl_batch1_kidney_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_kidney_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=renal tissue=kidney rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/7dcda4ae-b5e6-4917-9c79-6e090eb3caea/ENCFF363GDM.bigWig
     shortLabel kidney r1-
@@ -520,8 +520,8 @@ priority 1
     color 217,95,2
     type bigWig
 
-    track mgst1_cshl_batch1_kidney_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_kidney_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=renal tissue=kidney rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/eb2419a7-984d-42e9-ac12-f26cfd620cfd/ENCFF878WGQ.bigWig
     shortLabel kidney r1+
@@ -530,8 +530,8 @@ priority 1
     color 217,95,2
     type bigWig
 
-    track mgst1_cshl_batch1_kidney_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_kidney_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=renal tissue=kidney rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/7981a04e-2c18-4ac2-a3dd-fabaefd89f97/ENCFF983LLT.bigWig
     shortLabel kidney r2-
@@ -540,8 +540,8 @@ priority 1
     color 217,95,2
     type bigWig
 
-    track mgst1_cshl_batch1_kidney_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_kidney_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=renal tissue=kidney rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/4cf78d20-6e71-4bbd-be73-97ce97b430d0/ENCFF127NND.bigWig
     shortLabel kidney r2+
@@ -550,8 +550,8 @@ priority 1
     color 217,95,2
     type bigWig
 
-    track mgst1_cshl_batch1_mammary_gland_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_mammary_gland_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=mammary_gland rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/ef85c936-6e7a-461e-a835-490f202f0a80/ENCFF739XTP.bigWig
     shortLabel mammary r1-
@@ -560,8 +560,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_mammary_gland_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_mammary_gland_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=mammary_gland rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/abf9445f-79c9-495e-8433-6c9d3af6c312/ENCFF791XDM.bigWig
     shortLabel mammary r1+
@@ -570,8 +570,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_mammary_gland_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_mammary_gland_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=mammary_gland rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/f3ebc57c-dab9-4c12-8e02-0e9b0d5b6222/ENCFF505TFJ.bigWig
     shortLabel mammary r2-
@@ -580,8 +580,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_mammary_gland_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_mammary_gland_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=mammary_gland rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/9d85f509-e27c-4efe-9e1f-083a1591587d/ENCFF171DFQ.bigWig
     shortLabel mammary r2+
@@ -590,8 +590,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_ovary_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_ovary_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=ovary rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/67cb1069-090a-4798-a259-433fcb0e93d7/ENCFF979PSM.bigWig
     shortLabel ovary r1-
@@ -600,8 +600,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_ovary_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_ovary_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=ovary rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/28441f18-5d64-4e1e-9ed4-551a78a77f65/ENCFF946YVP.bigWig
     shortLabel ovary r1+
@@ -610,8 +610,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_ovary_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_ovary_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=ovary rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/1781d459-a36a-4652-b19e-44658764049b/ENCFF908SYE.bigWig
     shortLabel ovary r2-
@@ -620,8 +620,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_ovary_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_ovary_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=ovary rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/83fa01d7-5558-4361-b048-afb0b0cf706c/ENCFF679TGN.bigWig
     shortLabel ovary r2+
@@ -630,8 +630,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_testis_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_testis_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=testis rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/316c09d9-3f0c-46cf-a1a6-c535e3524728/ENCFF339LBY.bigWig
     shortLabel testis r1-
@@ -640,8 +640,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_testis_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_testis_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=testis rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/f0d3d585-5efc-48ff-8d4a-968f30448a0f/ENCFF216HBX.bigWig
     shortLabel testis r1+
@@ -650,8 +650,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_testis_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_testis_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=reproductive tissue=testis rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/95f48e0a-2d26-467b-a204-56461715998e/ENCFF960KND.bigWig
     shortLabel testis r2-
@@ -660,8 +660,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_testis_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_testis_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=reproductive tissue=testis rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/cb126493-3476-4358-86e0-a36947a1e508/ENCFF804EKC.bigWig
     shortLabel testis r2+
@@ -670,8 +670,8 @@ priority 1
     color 140,86,75
     type bigWig
 
-    track mgst1_cshl_batch1_lung_r1_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_lung_r1_minus
+    parent mtrs_signal off
     subGroups strand=minus system=respiratory tissue=lung rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/ce580ee1-781a-4ca0-b966-cd40bc008603/ENCFF663ZDA.bigWig
     shortLabel lung r1-
@@ -680,8 +680,8 @@ priority 1
     color 23,190,207
     type bigWig
 
-    track mgst1_cshl_batch1_lung_r1_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_lung_r1_plus
+    parent mtrs_signal on
     subGroups strand=plus system=respiratory tissue=lung rep=r1
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/7bc6c7bc-87c6-47f1-b99e-59337c676338/ENCFF070OKD.bigWig
     shortLabel lung r1+
@@ -690,8 +690,8 @@ priority 1
     color 23,190,207
     type bigWig
 
-    track mgst1_cshl_batch1_lung_r2_minus
-    parent mgst1_cshl_batch1_signal off
+    track mtrs_lung_r2_minus
+    parent mtrs_signal off
     subGroups strand=minus system=respiratory tissue=lung rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/e9218fae-e197-4139-a778-c349378fb846/ENCFF521SVH.bigWig
     shortLabel lung r2-
@@ -700,8 +700,8 @@ priority 1
     color 23,190,207
     type bigWig
 
-    track mgst1_cshl_batch1_lung_r2_plus
-    parent mgst1_cshl_batch1_signal on
+    track mtrs_lung_r2_plus
+    parent mtrs_signal on
     subGroups strand=plus system=respiratory tissue=lung rep=r2
     bigDataUrl https://encode-public.s3.amazonaws.com/2021/04/15/42e79289-8644-44c9-9519-22ada5f06b8f/ENCFF594SPI.bigWig
     shortLabel lung r2+

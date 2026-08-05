@@ -1,0 +1,532 @@
+hub adipocytes_purified_recount3
+shortLabel ADIPOCYTES purified (recount3)
+longLabel Mgst1 - PURIFIED ADIPOCYTES (not whole tissue) from 3 fat depots | bulk RNA-seq | recount3 of SRA SRP199674 | NIH | 3 depots x 3 paired animals | mm10
+useOneFile on
+descriptionUrl https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131861
+email 
+
+genome mm10
+defaultPos chr6:138,139,500-138,157,800
+
+track adipocytes_purified_recount3_signal
+compositeTrack on
+type bigWig
+shortLabel PURIFIED adipocytes
+longLabel Purified mature adipocytes (collagenase-dissociated, floating fraction) - NOT whole adipose tissue | bulk RNA-seq (single-end, 31M reads/sample) | SOURCE: recount3 Monorail pipeline of SRA SRP199674 | NIH | wild-type C57BL/6, regular chow | animals 7/11/13, complete depot triplets | mm10 | UNSTRANDED (.ALL.bw) | recount3 base_sums, NOT RPM | NOT comparable to the ENCODE-tissue or WAT-tissue hubs
+visibility full
+autoScale group
+alwaysZero on
+maxHeightPixels 128:32:12
+windowingFunction mean
+smoothingWindow off
+aggregate none
+subGroup1 depot Adipocyte_type BAT=BAT IWAT=IWAT EWAT=EWAT
+subGroup2 animal Animal a7=mouse_7 a11=mouse_11 a13=mouse_13
+dimensions dimX=animal dimY=depot
+sortOrder depot=+ animal=+
+dragAndDrop subTracks
+priority 1
+
+    track adipocytes_purified_recount3_BAT_a11
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=BAT animal=a11
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/84/sra.base_sums.SRP199674_SRR9137584.ALL.bw
+    shortLabel BAT adipo m11
+    longLabel brown adipocytes (interscapular) - PURIFIED CELLS - mouse 11 | recount3 SRP199674 / SRR9137584 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137584
+sample                                                                                                                                              SAMN11875122
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/84/sra.base_sums.SRP199674_SRR9137584.ALL.bw
+sumData                                                                                                                                               1736142660
+Mgst1                                                                                                                                                  30.729961
+Adipoq                                                                                                                                                 39.746748
+Ucp1                                                                                                                                                  539.717263
+Ptprc                                                                                                                                                   0.042825
+Pecam1                                                                                                                                                  1.936813
+E1a                                                                                                                                                   134.857143
+E1b                                                                                                                                                     3.773649
+E2                                                                                                                                                    529.617834
+E3                                                                                                                                                    729.052632
+E3b                                                                                                                                                     6.537037
+E4                                                                                                                                                    576.197115
+f_E1a                                                                                                                                                   0.068108
+f_E1b                                                                                                                                                   0.001906
+f_E2                                                                                                                                                    0.267479
+f_E3                                                                                                                                                    0.368202
+f_E3b                                                                                                                                                   0.003301
+f_E4                                                                                                                                                    0.291003
+Name: 0, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137584 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137584
+sample                                                                                                                                              SAMN11875122
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/84/sra.base_sums.SRP199674_SRR9137584.ALL.bw
+sumData                                                                                                                                               1736142660
+Mgst1                                                                                                                                                  30.729961
+Adipoq                                                                                                                                                 39.746748
+Ucp1                                                                                                                                                  539.717263
+Ptprc                                                                                                                                                   0.042825
+Pecam1                                                                                                                                                  1.936813
+E1a                                                                                                                                                   134.857143
+E1b                                                                                                                                                     3.773649
+E2                                                                                                                                                    529.617834
+E3                                                                                                                                                    729.052632
+E3b                                                                                                                                                     6.537037
+E4                                                                                                                                                    576.197115
+f_E1a                                                                                                                                                   0.068108
+f_E1b                                                                                                                                                   0.001906
+f_E2                                                                                                                                                    0.267479
+f_E3                                                                                                                                                    0.368202
+f_E3b                                                                                                                                                   0.003301
+f_E4                                                                                                                                                    0.291003
+Name: 0, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="brown adipocytes (interscapular)" animal=11 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=539.7 Ptprc_marker=0.04
+    color 217,95,2
+    type bigWig
+
+    track adipocytes_purified_recount3_BAT_a13
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=BAT animal=a13
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/86/sra.base_sums.SRP199674_SRR9137586.ALL.bw
+    shortLabel BAT adipo m13
+    longLabel brown adipocytes (interscapular) - PURIFIED CELLS - mouse 13 | recount3 SRP199674 / SRR9137586 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137586
+sample                                                                                                                                              SAMN11875120
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/86/sra.base_sums.SRP199674_SRR9137586.ALL.bw
+sumData                                                                                                                                               1344859185
+Mgst1                                                                                                                                                  22.344313
+Adipoq                                                                                                                                                 51.368612
+Ucp1                                                                                                                                                  468.536724
+Ptprc                                                                                                                                                   0.035323
+Pecam1                                                                                                                                                  1.223271
+E1a                                                                                                                                                   115.706349
+E1b                                                                                                                                                     4.797297
+E2                                                                                                                                                    494.547771
+E3                                                                                                                                                    664.094737
+E3b                                                                                                                                                     8.694444
+E4                                                                                                                                                        516.75
+f_E1a                                                                                                                                                   0.064118
+f_E1b                                                                                                                                                   0.002658
+f_E2                                                                                                                                                     0.27405
+f_E3                                                                                                                                                    0.368003
+f_E3b                                                                                                                                                   0.004818
+f_E4                                                                                                                                                    0.286353
+Name: 1, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137586 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137586
+sample                                                                                                                                              SAMN11875120
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/86/sra.base_sums.SRP199674_SRR9137586.ALL.bw
+sumData                                                                                                                                               1344859185
+Mgst1                                                                                                                                                  22.344313
+Adipoq                                                                                                                                                 51.368612
+Ucp1                                                                                                                                                  468.536724
+Ptprc                                                                                                                                                   0.035323
+Pecam1                                                                                                                                                  1.223271
+E1a                                                                                                                                                   115.706349
+E1b                                                                                                                                                     4.797297
+E2                                                                                                                                                    494.547771
+E3                                                                                                                                                    664.094737
+E3b                                                                                                                                                     8.694444
+E4                                                                                                                                                        516.75
+f_E1a                                                                                                                                                   0.064118
+f_E1b                                                                                                                                                   0.002658
+f_E2                                                                                                                                                     0.27405
+f_E3                                                                                                                                                    0.368003
+f_E3b                                                                                                                                                   0.004818
+f_E4                                                                                                                                                    0.286353
+Name: 1, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="brown adipocytes (interscapular)" animal=13 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=468.5 Ptprc_marker=0.04
+    color 217,95,2
+    type bigWig
+
+    track adipocytes_purified_recount3_BAT_a7
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=BAT animal=a7
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/82/sra.base_sums.SRP199674_SRR9137582.ALL.bw
+    shortLabel BAT adipo m7
+    longLabel brown adipocytes (interscapular) - PURIFIED CELLS - mouse 7 | recount3 SRP199674 / SRR9137582 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137582
+sample                                                                                                                                              SAMN11875124
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/82/sra.base_sums.SRP199674_SRR9137582.ALL.bw
+sumData                                                                                                                                               1562475034
+Mgst1                                                                                                                                                  22.756255
+Adipoq                                                                                                                                                 51.642042
+Ucp1                                                                                                                                                  404.953078
+Ptprc                                                                                                                                                   0.043287
+Pecam1                                                                                                                                                  1.700723
+E1a                                                                                                                                                   108.388889
+E1b                                                                                                                                                     3.587838
+E2                                                                                                                                                    438.840764
+E3                                                                                                                                                    592.726316
+E3b                                                                                                                                                     4.601852
+E4                                                                                                                                                    480.887821
+f_E1a                                                                                                                                                   0.066536
+f_E1b                                                                                                                                                   0.002202
+f_E2                                                                                                                                                    0.269387
+f_E3                                                                                                                                                    0.363852
+f_E3b                                                                                                                                                   0.002825
+f_E4                                                                                                                                                    0.295198
+Name: 2, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137582 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137582
+sample                                                                                                                                              SAMN11875124
+depot                                                                                                                                                        BAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/82/sra.base_sums.SRP199674_SRR9137582.ALL.bw
+sumData                                                                                                                                               1562475034
+Mgst1                                                                                                                                                  22.756255
+Adipoq                                                                                                                                                 51.642042
+Ucp1                                                                                                                                                  404.953078
+Ptprc                                                                                                                                                   0.043287
+Pecam1                                                                                                                                                  1.700723
+E1a                                                                                                                                                   108.388889
+E1b                                                                                                                                                     3.587838
+E2                                                                                                                                                    438.840764
+E3                                                                                                                                                    592.726316
+E3b                                                                                                                                                     4.601852
+E4                                                                                                                                                    480.887821
+f_E1a                                                                                                                                                   0.066536
+f_E1b                                                                                                                                                   0.002202
+f_E2                                                                                                                                                    0.269387
+f_E3                                                                                                                                                    0.363852
+f_E3b                                                                                                                                                   0.002825
+f_E4                                                                                                                                                    0.295198
+Name: 2, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="brown adipocytes (interscapular)" animal=7 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=405.0 Ptprc_marker=0.04
+    color 217,95,2
+    type bigWig
+
+    track adipocytes_purified_recount3_EWAT_a11
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=EWAT animal=a11
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/77/sra.base_sums.SRP199674_SRR9137577.ALL.bw
+    shortLabel EWAT adipo m11
+    longLabel epididymal white adipocytes (visceral) - PURIFIED CELLS - mouse 11 | recount3 SRP199674 / SRR9137577 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137577
+sample                                                                                                                                              SAMN11875117
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/77/sra.base_sums.SRP199674_SRR9137577.ALL.bw
+sumData                                                                                                                                               1700620545
+Mgst1                                                                                                                                                  36.168185
+Adipoq                                                                                                                                                330.826258
+Ucp1                                                                                                                                                    0.172542
+Ptprc                                                                                                                                                   0.239094
+Pecam1                                                                                                                                                  2.976179
+E1a                                                                                                                                                   273.825397
+E1b                                                                                                                                                     6.361486
+E2                                                                                                                                                   1261.299363
+E3                                                                                                                                                   1410.073684
+E3b                                                                                                                                                    10.740741
+E4                                                                                                                                                   1139.216346
+f_E1a                                                                                                                                                   0.066762
+f_E1b                                                                                                                                                   0.001551
+f_E2                                                                                                                                                     0.30752
+f_E3                                                                                                                                                    0.343793
+f_E3b                                                                                                                                                   0.002619
+f_E4                                                                                                                                                    0.277755
+Name: 3, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137577 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137577
+sample                                                                                                                                              SAMN11875117
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/77/sra.base_sums.SRP199674_SRR9137577.ALL.bw
+sumData                                                                                                                                               1700620545
+Mgst1                                                                                                                                                  36.168185
+Adipoq                                                                                                                                                330.826258
+Ucp1                                                                                                                                                    0.172542
+Ptprc                                                                                                                                                   0.239094
+Pecam1                                                                                                                                                  2.976179
+E1a                                                                                                                                                   273.825397
+E1b                                                                                                                                                     6.361486
+E2                                                                                                                                                   1261.299363
+E3                                                                                                                                                   1410.073684
+E3b                                                                                                                                                    10.740741
+E4                                                                                                                                                   1139.216346
+f_E1a                                                                                                                                                   0.066762
+f_E1b                                                                                                                                                   0.001551
+f_E2                                                                                                                                                     0.30752
+f_E3                                                                                                                                                    0.343793
+f_E3b                                                                                                                                                   0.002619
+f_E4                                                                                                                                                    0.277755
+Name: 3, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="epididymal white adipocytes (visceral)" animal=11 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.2 Ptprc_marker=0.24
+    color 117,112,179
+    type bigWig
+
+    track adipocytes_purified_recount3_EWAT_a13
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=EWAT animal=a13
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/78/sra.base_sums.SRP199674_SRR9137578.ALL.bw
+    shortLabel EWAT adipo m13
+    longLabel epididymal white adipocytes (visceral) - PURIFIED CELLS - mouse 13 | recount3 SRP199674 / SRR9137578 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137578
+sample                                                                                                                                              SAMN11875116
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/78/sra.base_sums.SRP199674_SRR9137578.ALL.bw
+sumData                                                                                                                                               1711413917
+Mgst1                                                                                                                                                  32.610066
+Adipoq                                                                                                                                                356.803407
+Ucp1                                                                                                                                                    0.094748
+Ptprc                                                                                                                                                   0.377271
+Pecam1                                                                                                                                                  7.004642
+E1a                                                                                                                                                   256.492063
+E1b                                                                                                                                                     4.003378
+E2                                                                                                                                                   1128.987261
+E3                                                                                                                                                   1309.094737
+E3b                                                                                                                                                     5.453704
+E4                                                                                                                                                   1028.020833
+f_E1a                                                                                                                                                   0.068727
+f_E1b                                                                                                                                                   0.001073
+f_E2                                                                                                                                                    0.302511
+f_E3                                                                                                                                                    0.350771
+f_E3b                                                                                                                                                   0.001461
+f_E4                                                                                                                                                    0.275457
+Name: 4, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137578 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137578
+sample                                                                                                                                              SAMN11875116
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/78/sra.base_sums.SRP199674_SRR9137578.ALL.bw
+sumData                                                                                                                                               1711413917
+Mgst1                                                                                                                                                  32.610066
+Adipoq                                                                                                                                                356.803407
+Ucp1                                                                                                                                                    0.094748
+Ptprc                                                                                                                                                   0.377271
+Pecam1                                                                                                                                                  7.004642
+E1a                                                                                                                                                   256.492063
+E1b                                                                                                                                                     4.003378
+E2                                                                                                                                                   1128.987261
+E3                                                                                                                                                   1309.094737
+E3b                                                                                                                                                     5.453704
+E4                                                                                                                                                   1028.020833
+f_E1a                                                                                                                                                   0.068727
+f_E1b                                                                                                                                                   0.001073
+f_E2                                                                                                                                                    0.302511
+f_E3                                                                                                                                                    0.350771
+f_E3b                                                                                                                                                   0.001461
+f_E4                                                                                                                                                    0.275457
+Name: 4, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="epididymal white adipocytes (visceral)" animal=13 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.1 Ptprc_marker=0.38
+    color 117,112,179
+    type bigWig
+
+    track adipocytes_purified_recount3_EWAT_a7
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=EWAT animal=a7
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/75/sra.base_sums.SRP199674_SRR9137575.ALL.bw
+    shortLabel EWAT adipo m7
+    longLabel epididymal white adipocytes (visceral) - PURIFIED CELLS - mouse 7 | recount3 SRP199674 / SRR9137575 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137575
+sample                                                                                                                                              SAMN11875119
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/75/sra.base_sums.SRP199674_SRR9137575.ALL.bw
+sumData                                                                                                                                               1337038052
+Mgst1                                                                                                                                                  38.921835
+Adipoq                                                                                                                                                262.227727
+Ucp1                                                                                                                                                    0.127506
+Ptprc                                                                                                                                                   0.207631
+Pecam1                                                                                                                                                  2.457475
+E1a                                                                                                                                                   244.253968
+E1b                                                                                                                                                     2.614865
+E2                                                                                                                                                   1061.783439
+E3                                                                                                                                                   1218.652632
+E3b                                                                                                                                                     4.722222
+E4                                                                                                                                                    961.991987
+f_E1a                                                                                                                                                   0.069906
+f_E1b                                                                                                                                                   0.000748
+f_E2                                                                                                                                                    0.303886
+f_E3                                                                                                                                                    0.348782
+f_E3b                                                                                                                                                   0.001352
+f_E4                                                                                                                                                    0.275325
+Name: 5, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137575 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137575
+sample                                                                                                                                              SAMN11875119
+depot                                                                                                                                                       EWAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/75/sra.base_sums.SRP199674_SRR9137575.ALL.bw
+sumData                                                                                                                                               1337038052
+Mgst1                                                                                                                                                  38.921835
+Adipoq                                                                                                                                                262.227727
+Ucp1                                                                                                                                                    0.127506
+Ptprc                                                                                                                                                   0.207631
+Pecam1                                                                                                                                                  2.457475
+E1a                                                                                                                                                   244.253968
+E1b                                                                                                                                                     2.614865
+E2                                                                                                                                                   1061.783439
+E3                                                                                                                                                   1218.652632
+E3b                                                                                                                                                     4.722222
+E4                                                                                                                                                    961.991987
+f_E1a                                                                                                                                                   0.069906
+f_E1b                                                                                                                                                   0.000748
+f_E2                                                                                                                                                    0.303886
+f_E3                                                                                                                                                    0.348782
+f_E3b                                                                                                                                                   0.001352
+f_E4                                                                                                                                                    0.275325
+Name: 5, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="epididymal white adipocytes (visceral)" animal=7 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.1 Ptprc_marker=0.21
+    color 117,112,179
+    type bigWig
+
+    track adipocytes_purified_recount3_IWAT_a11
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=IWAT animal=a11
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/70/sra.base_sums.SRP199674_SRR9137570.ALL.bw
+    shortLabel IWAT adipo m11
+    longLabel inguinal white adipocytes (subcutaneous) - PURIFIED CELLS - mouse 11 | recount3 SRP199674 / SRR9137570 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137570
+sample                                                                                                                                              SAMN11875104
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/70/sra.base_sums.SRP199674_SRR9137570.ALL.bw
+sumData                                                                                                                                               1151054771
+Mgst1                                                                                                                                                  19.449175
+Adipoq                                                                                                                                                 202.99979
+Ucp1                                                                                                                                                    0.873463
+Ptprc                                                                                                                                                   0.155924
+Pecam1                                                                                                                                                   1.14211
+E1a                                                                                                                                                   214.142857
+E1b                                                                                                                                                     2.888514
+E2                                                                                                                                                    665.955414
+E3                                                                                                                                                    930.273684
+E3b                                                                                                                                                     3.527778
+E4                                                                                                                                                    682.389423
+f_E1a                                                                                                                                                   0.085685
+f_E1b                                                                                                                                                   0.001156
+f_E2                                                                                                                                                     0.26647
+f_E3                                                                                                                                                    0.372232
+f_E3b                                                                                                                                                   0.001412
+f_E4                                                                                                                                                    0.273046
+Name: 6, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137570 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137570
+sample                                                                                                                                              SAMN11875104
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                        11
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/70/sra.base_sums.SRP199674_SRR9137570.ALL.bw
+sumData                                                                                                                                               1151054771
+Mgst1                                                                                                                                                  19.449175
+Adipoq                                                                                                                                                 202.99979
+Ucp1                                                                                                                                                    0.873463
+Ptprc                                                                                                                                                   0.155924
+Pecam1                                                                                                                                                   1.14211
+E1a                                                                                                                                                   214.142857
+E1b                                                                                                                                                     2.888514
+E2                                                                                                                                                    665.955414
+E3                                                                                                                                                    930.273684
+E3b                                                                                                                                                     3.527778
+E4                                                                                                                                                    682.389423
+f_E1a                                                                                                                                                   0.085685
+f_E1b                                                                                                                                                   0.001156
+f_E2                                                                                                                                                     0.26647
+f_E3                                                                                                                                                    0.372232
+f_E3b                                                                                                                                                   0.001412
+f_E4                                                                                                                                                    0.273046
+Name: 6, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="inguinal white adipocytes (subcutaneous)" animal=11 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.9 Ptprc_marker=0.16
+    color 31,119,180
+    type bigWig
+
+    track adipocytes_purified_recount3_IWAT_a13
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=IWAT animal=a13
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/72/sra.base_sums.SRP199674_SRR9137572.ALL.bw
+    shortLabel IWAT adipo m13
+    longLabel inguinal white adipocytes (subcutaneous) - PURIFIED CELLS - mouse 13 | recount3 SRP199674 / SRR9137572 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137572
+sample                                                                                                                                              SAMN11875102
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/72/sra.base_sums.SRP199674_SRR9137572.ALL.bw
+sumData                                                                                                                                               1610797454
+Mgst1                                                                                                                                                  43.441002
+Adipoq                                                                                                                                                405.130876
+Ucp1                                                                                                                                                    0.860277
+Ptprc                                                                                                                                                   0.060135
+Pecam1                                                                                                                                                  2.425252
+E1a                                                                                                                                                   289.904762
+E1b                                                                                                                                                     7.199324
+E2                                                                                                                                                    1136.33121
+E3                                                                                                                                                   1477.368421
+E3b                                                                                                                                                     9.416667
+E4                                                                                                                                                   1091.528846
+f_E1a                                                                                                                                                   0.072264
+f_E1b                                                                                                                                                   0.001795
+f_E2                                                                                                                                                    0.283251
+f_E3                                                                                                                                                     0.36826
+f_E3b                                                                                                                                                   0.002347
+f_E4                                                                                                                                                    0.272083
+Name: 7, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137572 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137572
+sample                                                                                                                                              SAMN11875102
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                        13
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/72/sra.base_sums.SRP199674_SRR9137572.ALL.bw
+sumData                                                                                                                                               1610797454
+Mgst1                                                                                                                                                  43.441002
+Adipoq                                                                                                                                                405.130876
+Ucp1                                                                                                                                                    0.860277
+Ptprc                                                                                                                                                   0.060135
+Pecam1                                                                                                                                                  2.425252
+E1a                                                                                                                                                   289.904762
+E1b                                                                                                                                                     7.199324
+E2                                                                                                                                                    1136.33121
+E3                                                                                                                                                   1477.368421
+E3b                                                                                                                                                     9.416667
+E4                                                                                                                                                   1091.528846
+f_E1a                                                                                                                                                   0.072264
+f_E1b                                                                                                                                                   0.001795
+f_E2                                                                                                                                                    0.283251
+f_E3                                                                                                                                                     0.36826
+f_E3b                                                                                                                                                   0.002347
+f_E4                                                                                                                                                    0.272083
+Name: 7, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="inguinal white adipocytes (subcutaneous)" animal=13 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.9 Ptprc_marker=0.06
+    color 31,119,180
+    type bigWig
+
+    track adipocytes_purified_recount3_IWAT_a7
+    parent adipocytes_purified_recount3_signal on
+    subGroups depot=IWAT animal=a7
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/69/sra.base_sums.SRP199674_SRR9137569.ALL.bw
+    shortLabel IWAT adipo m7
+    longLabel inguinal white adipocytes (subcutaneous) - PURIFIED CELLS - mouse 7 | recount3 SRP199674 / SRR9137569 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR9137569
+sample                                                                                                                                              SAMN11875106
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/69/sra.base_sums.SRP199674_SRR9137569.ALL.bw
+sumData                                                                                                                                               1298960974
+Mgst1                                                                                                                                                  42.039005
+Adipoq                                                                                                                                                153.481482
+Ucp1                                                                                                                                                    0.153904
+Ptprc                                                                                                                                                   0.039931
+Pecam1                                                                                                                                                  1.126242
+E1a                                                                                                                                                   244.674603
+E1b                                                                                                                                                     4.557432
+E2                                                                                                                                                    870.019108
+E3                                                                                                                                                   1219.410526
+E3b                                                                                                                                                     4.277778
+E4                                                                                                                                                    808.216346
+f_E1a                                                                                                                                                   0.077646
+f_E1b                                                                                                                                                   0.001446
+f_E2                                                                                                                                                    0.276095
+f_E3                                                                                                                                                    0.386972
+f_E3b                                                                                                                                                   0.001358
+f_E4                                                                                                                                                    0.256483
+Name: 8, dtype: object> | NIH | wild-type C57BL/6, regular chow | bulk RNA-seq | mm10 | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP199674 run=SRR9137569 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR9137569
+sample                                                                                                                                              SAMN11875106
+depot                                                                                                                                                       IWAT
+animal                                                                                                                                                         7
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/74/SRP199674/69/sra.base_sums.SRP199674_SRR9137569.ALL.bw
+sumData                                                                                                                                               1298960974
+Mgst1                                                                                                                                                  42.039005
+Adipoq                                                                                                                                                153.481482
+Ucp1                                                                                                                                                    0.153904
+Ptprc                                                                                                                                                   0.039931
+Pecam1                                                                                                                                                  1.126242
+E1a                                                                                                                                                   244.674603
+E1b                                                                                                                                                     4.557432
+E2                                                                                                                                                    870.019108
+E3                                                                                                                                                   1219.410526
+E3b                                                                                                                                                     4.277778
+E4                                                                                                                                                    808.216346
+f_E1a                                                                                                                                                   0.077646
+f_E1b                                                                                                                                                   0.001446
+f_E2                                                                                                                                                    0.276095
+f_E3                                                                                                                                                    0.386972
+f_E3b                                                                                                                                                   0.001358
+f_E4                                                                                                                                                    0.256483
+Name: 8, dtype: object> preparation="purified mature adipocytes (NOT whole tissue)" assay="bulk RNA-seq, single-end" depot="inguinal white adipocytes (subcutaneous)" animal=7 genotype=wild-type strain=C57BL/6 diet="regular chow" assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)" Ucp1_marker=0.2 Ptprc_marker=0.04
+    color 31,119,180
+    type bigWig

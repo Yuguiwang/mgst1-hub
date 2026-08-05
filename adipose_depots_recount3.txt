@@ -1,0 +1,352 @@
+hub adipose_depots_recount3
+shortLabel ADIPOSE depots (recount3)
+longLabel Mgst1 - mouse WAT depots (iWAT/eWAT/rWAT), LFD controls, recount3 unmodified bigWigs, SRP139599
+useOneFile on
+descriptionUrl https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112999
+email 
+
+genome mm10
+defaultPos chr6:138,139,500-138,157,800
+
+track adiposeR3_signal
+compositeTrack on
+type bigWig
+shortLabel ADIPOSE r3 depots
+longLabel Mouse WAT depot RNA-seq | SOURCE: recount3 (Monorail pipeline) of SRA SRP139599 | Miami University | 3 WAT depots x 3 reps | LFD (standard chow) controls only | mm10 | male C57BL/6J | UNSTRANDED (.ALL.bw) - plus+minus combined | NOT comparable to the ENCODE CSHL hub
+visibility full
+autoScale group
+alwaysZero on
+maxHeightPixels 128:32:12
+windowingFunction mean
+smoothingWindow off
+aggregate none
+subGroup1 depot Adipose_depot EWAT=epididymal_EWAT IWAT=inguinal_IWAT RWAT=retroperitoneal_RWAT
+subGroup2 rep Replicate r1=rep1 r2=rep2 r3=rep3
+dimensions dimX=rep dimY=depot
+sortOrder depot=+ rep=+
+dragAndDrop subTracks
+priority 1
+
+    track adiposeR3_EWAT_r1
+    parent adiposeR3_signal on
+    subGroups depot=EWAT rep=r1
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/12/sra.base_sums.SRP139599_SRR6984612.ALL.bw
+    shortLabel EWAT r1
+    longLabel epididymal WAT (visceral) rep1 | recount3 SRP139599 / SRR6984612 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984612
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916286
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/12/sra.base_sums.SRP139599_SRR6984612.ALL.bw
+sumData                                                                                                                                               1950222386
+gene                                                                                                                                                   48.073965
+E1a                                                                                                                                                    11.142857
+E1b                                                                                                                                                     9.432432
+E2                                                                                                                                                    728.630573
+E3                                                                                                                                                    907.715789
+E3b                                                                                                                                                         7.25
+E4                                                                                                                                                    802.003205
+Name: 0, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984612 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984612
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916286
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/12/sra.base_sums.SRP139599_SRR6984612.ALL.bw
+sumData                                                                                                                                               1950222386
+gene                                                                                                                                                   48.073965
+E1a                                                                                                                                                    11.142857
+E1b                                                                                                                                                     9.432432
+E2                                                                                                                                                    728.630573
+E3                                                                                                                                                    907.715789
+E3b                                                                                                                                                         7.25
+E4                                                                                                                                                    802.003205
+Name: 0, dtype: object> depot="epididymal WAT (visceral)" replicate=1 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 227,26,28
+    type bigWig
+
+    track adiposeR3_EWAT_r2
+    parent adiposeR3_signal on
+    subGroups depot=EWAT rep=r2
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/13/sra.base_sums.SRP139599_SRR6984613.ALL.bw
+    shortLabel EWAT r2
+    longLabel epididymal WAT (visceral) rep2 | recount3 SRP139599 / SRR6984613 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984613
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916285
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/13/sra.base_sums.SRP139599_SRR6984613.ALL.bw
+sumData                                                                                                                                               1951741560
+gene                                                                                                                                                   42.748179
+E1a                                                                                                                                                    12.484127
+E1b                                                                                                                                                    12.672297
+E2                                                                                                                                                   1051.643312
+E3                                                                                                                                                   1380.610526
+E3b                                                                                                                                                     3.935185
+E4                                                                                                                                                   1258.580128
+Name: 1, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984613 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984613
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916285
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/13/sra.base_sums.SRP139599_SRR6984613.ALL.bw
+sumData                                                                                                                                               1951741560
+gene                                                                                                                                                   42.748179
+E1a                                                                                                                                                    12.484127
+E1b                                                                                                                                                    12.672297
+E2                                                                                                                                                   1051.643312
+E3                                                                                                                                                   1380.610526
+E3b                                                                                                                                                     3.935185
+E4                                                                                                                                                   1258.580128
+Name: 1, dtype: object> depot="epididymal WAT (visceral)" replicate=2 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 227,26,28
+    type bigWig
+
+    track adiposeR3_EWAT_r3
+    parent adiposeR3_signal on
+    subGroups depot=EWAT rep=r3
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/14/sra.base_sums.SRP139599_SRR6984614.ALL.bw
+    shortLabel EWAT r3
+    longLabel epididymal WAT (visceral) rep3 | recount3 SRP139599 / SRR6984614 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984614
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916284
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/14/sra.base_sums.SRP139599_SRR6984614.ALL.bw
+sumData                                                                                                                                               2043058711
+gene                                                                                                                                                   52.512963
+E1a                                                                                                                                                    14.857143
+E1b                                                                                                                                                    17.891892
+E2                                                                                                                                                    824.490446
+E3                                                                                                                                                   1082.178947
+E3b                                                                                                                                                      6.87963
+E4                                                                                                                                                    849.403846
+Name: 2, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984614 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984614
+depot                                                                                                                                                       EWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916284
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/14/sra.base_sums.SRP139599_SRR6984614.ALL.bw
+sumData                                                                                                                                               2043058711
+gene                                                                                                                                                   52.512963
+E1a                                                                                                                                                    14.857143
+E1b                                                                                                                                                    17.891892
+E2                                                                                                                                                    824.490446
+E3                                                                                                                                                   1082.178947
+E3b                                                                                                                                                      6.87963
+E4                                                                                                                                                    849.403846
+Name: 2, dtype: object> depot="epididymal WAT (visceral)" replicate=3 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 227,26,28
+    type bigWig
+
+    track adiposeR3_IWAT_r1
+    parent adiposeR3_signal on
+    subGroups depot=IWAT rep=r1
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/18/sra.base_sums.SRP139599_SRR6984618.ALL.bw
+    shortLabel IWAT r1
+    longLabel inguinal WAT (subcutaneous) rep1 | recount3 SRP139599 / SRR6984618 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984618
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916280
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/18/sra.base_sums.SRP139599_SRR6984618.ALL.bw
+sumData                                                                                                                                               1856793632
+gene                                                                                                                                                   37.810015
+E1a                                                                                                                                                         13.0
+E1b                                                                                                                                                     9.111486
+E2                                                                                                                                                    842.656051
+E3                                                                                                                                                   1009.589474
+E3b                                                                                                                                                      3.12963
+E4                                                                                                                                                   1026.607372
+Name: 3, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984618 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984618
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916280
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/18/sra.base_sums.SRP139599_SRR6984618.ALL.bw
+sumData                                                                                                                                               1856793632
+gene                                                                                                                                                   37.810015
+E1a                                                                                                                                                         13.0
+E1b                                                                                                                                                     9.111486
+E2                                                                                                                                                    842.656051
+E3                                                                                                                                                   1009.589474
+E3b                                                                                                                                                      3.12963
+E4                                                                                                                                                   1026.607372
+Name: 3, dtype: object> depot="inguinal WAT (subcutaneous)" replicate=1 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 31,119,180
+    type bigWig
+
+    track adiposeR3_IWAT_r2
+    parent adiposeR3_signal on
+    subGroups depot=IWAT rep=r2
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/19/sra.base_sums.SRP139599_SRR6984619.ALL.bw
+    shortLabel IWAT r2
+    longLabel inguinal WAT (subcutaneous) rep2 | recount3 SRP139599 / SRR6984619 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984619
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916279
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/19/sra.base_sums.SRP139599_SRR6984619.ALL.bw
+sumData                                                                                                                                               1903857758
+gene                                                                                                                                                   53.032531
+E1a                                                                                                                                                     15.84127
+E1b                                                                                                                                                    11.185811
+E2                                                                                                                                                   1103.853503
+E3                                                                                                                                                   1431.778947
+E3b                                                                                                                                                     3.777778
+E4                                                                                                                                                   1491.439103
+Name: 4, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984619 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984619
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916279
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/19/sra.base_sums.SRP139599_SRR6984619.ALL.bw
+sumData                                                                                                                                               1903857758
+gene                                                                                                                                                   53.032531
+E1a                                                                                                                                                     15.84127
+E1b                                                                                                                                                    11.185811
+E2                                                                                                                                                   1103.853503
+E3                                                                                                                                                   1431.778947
+E3b                                                                                                                                                     3.777778
+E4                                                                                                                                                   1491.439103
+Name: 4, dtype: object> depot="inguinal WAT (subcutaneous)" replicate=2 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 31,119,180
+    type bigWig
+
+    track adiposeR3_IWAT_r3
+    parent adiposeR3_signal on
+    subGroups depot=IWAT rep=r3
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/20/sra.base_sums.SRP139599_SRR6984620.ALL.bw
+    shortLabel IWAT r3
+    longLabel inguinal WAT (subcutaneous) rep3 | recount3 SRP139599 / SRR6984620 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984620
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916278
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/20/sra.base_sums.SRP139599_SRR6984620.ALL.bw
+sumData                                                                                                                                               1881886811
+gene                                                                                                                                                   35.008036
+E1a                                                                                                                                                    12.539683
+E1b                                                                                                                                                    10.584459
+E2                                                                                                                                                    870.770701
+E3                                                                                                                                                   1131.147368
+E3b                                                                                                                                                     3.953704
+E4                                                                                                                                                   1172.366987
+Name: 5, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984620 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984620
+depot                                                                                                                                                       IWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916278
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/20/sra.base_sums.SRP139599_SRR6984620.ALL.bw
+sumData                                                                                                                                               1881886811
+gene                                                                                                                                                   35.008036
+E1a                                                                                                                                                    12.539683
+E1b                                                                                                                                                    10.584459
+E2                                                                                                                                                    870.770701
+E3                                                                                                                                                   1131.147368
+E3b                                                                                                                                                     3.953704
+E4                                                                                                                                                   1172.366987
+Name: 5, dtype: object> depot="inguinal WAT (subcutaneous)" replicate=3 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 31,119,180
+    type bigWig
+
+    track adiposeR3_RWAT_r1
+    parent adiposeR3_signal on
+    subGroups depot=RWAT rep=r1
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/24/sra.base_sums.SRP139599_SRR6984624.ALL.bw
+    shortLabel RWAT r1
+    longLabel retroperitoneal WAT rep1 | recount3 SRP139599 / SRR6984624 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984624
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916274
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/24/sra.base_sums.SRP139599_SRR6984624.ALL.bw
+sumData                                                                                                                                               2381056609
+gene                                                                                                                                                   51.457106
+E1a                                                                                                                                                    15.047619
+E1b                                                                                                                                                    14.233108
+E2                                                                                                                                                   1082.369427
+E3                                                                                                                                                   1258.778947
+E3b                                                                                                                                                     6.398148
+E4                                                                                                                                                   1275.376603
+Name: 6, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984624 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984624
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            1
+sample                                                                                                                                              SAMN08916274
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/24/sra.base_sums.SRP139599_SRR6984624.ALL.bw
+sumData                                                                                                                                               2381056609
+gene                                                                                                                                                   51.457106
+E1a                                                                                                                                                    15.047619
+E1b                                                                                                                                                    14.233108
+E2                                                                                                                                                   1082.369427
+E3                                                                                                                                                   1258.778947
+E3b                                                                                                                                                     6.398148
+E4                                                                                                                                                   1275.376603
+Name: 6, dtype: object> depot="retroperitoneal WAT" replicate=1 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 51,160,44
+    type bigWig
+
+    track adiposeR3_RWAT_r2
+    parent adiposeR3_signal on
+    subGroups depot=RWAT rep=r2
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/25/sra.base_sums.SRP139599_SRR6984625.ALL.bw
+    shortLabel RWAT r2
+    longLabel retroperitoneal WAT rep2 | recount3 SRP139599 / SRR6984625 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984625
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916273
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/25/sra.base_sums.SRP139599_SRR6984625.ALL.bw
+sumData                                                                                                                                               1866482033
+gene                                                                                                                                                   48.521829
+E1a                                                                                                                                                    14.301587
+E1b                                                                                                                                                    13.385135
+E2                                                                                                                                                    885.235669
+E3                                                                                                                                                   1101.505263
+E3b                                                                                                                                                     9.712963
+E4                                                                                                                                                   1143.746795
+Name: 7, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984625 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984625
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            2
+sample                                                                                                                                              SAMN08916273
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/25/sra.base_sums.SRP139599_SRR6984625.ALL.bw
+sumData                                                                                                                                               1866482033
+gene                                                                                                                                                   48.521829
+E1a                                                                                                                                                    14.301587
+E1b                                                                                                                                                    13.385135
+E2                                                                                                                                                    885.235669
+E3                                                                                                                                                   1101.505263
+E3b                                                                                                                                                     9.712963
+E4                                                                                                                                                   1143.746795
+Name: 7, dtype: object> depot="retroperitoneal WAT" replicate=2 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 51,160,44
+    type bigWig
+
+    track adiposeR3_RWAT_r3
+    parent adiposeR3_signal on
+    subGroups depot=RWAT rep=r3
+    bigDataUrl https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/26/sra.base_sums.SRP139599_SRR6984626.ALL.bw
+    shortLabel RWAT r3
+    longLabel retroperitoneal WAT rep3 | recount3 SRP139599 / SRR6984626 | BioSample <bound method NDFrame.sample of run                                                                                                                                                   SRR6984626
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916272
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/26/sra.base_sums.SRP139599_SRR6984626.ALL.bw
+sumData                                                                                                                                               1898490518
+gene                                                                                                                                                   52.465171
+E1a                                                                                                                                                    11.873016
+E1b                                                                                                                                                    15.530405
+E2                                                                                                                                                   1203.235669
+E3                                                                                                                                                   1470.652632
+E3b                                                                                                                                                    13.527778
+E4                                                                                                                                                   1436.701923
+Name: 8, dtype: object> | Miami University | LFD standard chow | mm10 | male C57BL/6J | unstranded
+    metadata source=recount3 pipeline=Monorail study=SRP139599 geo=GSE112999 run=SRR6984626 biosample=<bound method NDFrame.sample of run                                                                                                                                                   SRR6984626
+depot                                                                                                                                                       RWAT
+rep                                                                                                                                                            3
+sample                                                                                                                                              SAMN08916272
+s3         https://recount-opendata.s3.amazonaws.com/recount3/release/mouse/data_sources/sra/base_sums/99/SRP139599/26/sra.base_sums.SRP139599_SRR6984626.ALL.bw
+sumData                                                                                                                                               1898490518
+gene                                                                                                                                                   52.465171
+E1a                                                                                                                                                    11.873016
+E1b                                                                                                                                                    15.530405
+E2                                                                                                                                                   1203.235669
+E3                                                                                                                                                   1470.652632
+E3b                                                                                                                                                    13.527778
+E4                                                                                                                                                   1436.701923
+Name: 8, dtype: object> depot="retroperitoneal WAT" replicate=3 diet="standard rodent diet (LFD)" strain=C57BL/6J sex=male assembly=mm10 strand=unstranded normalization="recount3 base_sums (not RPM)"
+    color 51,160,44
+    type bigWig
